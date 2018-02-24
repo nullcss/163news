@@ -11,6 +11,7 @@ import record from 'views/Record/index'
 import system from 'views/System/index'
 import headline from 'views/Headline/index'
 import article from 'views/Article/index'
+import search from 'views/Search/index'
 
 
 Vue.use(Router)
@@ -50,6 +51,12 @@ export const router = new Router({
         meta: { page: true}, 
         component: user,
         name: '个人中心'
+    },
+    { 
+        path: '/search', 
+        name: '搜索', 
+        meta: { slide: 1 },
+        component: search
     },
     { 
         path: '/article/:id', 

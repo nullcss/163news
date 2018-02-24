@@ -18,7 +18,7 @@
         },
         methods: {
             skipSearch () {
-                // this.$router.push('/search')
+                this.$router.push('/search')
             }
         }
     }

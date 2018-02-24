@@ -21,6 +21,13 @@ const getters = {
     videoLoading: state => state.video.loading,
     videoEnd: state => state.video.end,
 
+    /*search*/
+    keyword: state => state.search.keyword,
+    searchPageindex: state => state.search.pageindex,
+    searchList: state => state.search.list,
+    searchLoading: state => state.search.loading,
+    searchEnd: state => state.search.end,
+
     /*headline*/
     headlineList: state => state.headline.list,
     headlineLoading: state => state.headline.loading,

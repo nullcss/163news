@@ -6,6 +6,7 @@ import app from './modules/app'
 import video from './modules/video'
 import headline from './modules/headline'
 import record from './modules/record'
+import search from './modules/search'
 import getters from './getters'
 
 Vue.use(Vuex)
@@ -17,7 +18,8 @@ const store = new Vuex.Store({
         home,
         video,
         headline,
-        record
+        record,
+        search
     },
     getters
 })
