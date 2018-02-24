@@ -1,4 +1,5 @@
 @import "./theme.less";
+@import "./border.less";
 
 /* 禁止选中文本 */
 .usn{
@@ -28,6 +29,21 @@
 .dib {display: inline-block;}
 .transparent { opacity: 0 }
 
+.border-half-left {
+    .border('left')
+}
+.border-half-top {
+    .border('top')
+}
+.border-half-bottom {
+    .border('bottom')
+}
+.border-half-right {
+    .border('right')
+}
+.border-half {
+    .border(true)
+}
 
 /*文字排版、颜色*/
 .red,a.red { color: @main }
