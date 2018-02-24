@@ -1,21 +1,12 @@
-# news
+# vue 仿网易163
 
-> A Vue.js project
+### npm install 安装依赖
 
-## Build Setup
+### npm run dev 本地开发
+
+### npm run build 打包发布
 
 ``` bash
-# install dependencies
-npm install
+### 数据方面用的是mock.js，在 Easy Mock 自己生成API
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+技术栈：vue-cli + vuex + axio
