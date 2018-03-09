@@ -9,15 +9,13 @@ import './utils/iconfont.js'
 
 /* 样式 */
 import './styles/index.less'
-import './styles/theme.less'
+// import './styles/theme.less'
 
 /* 指令 */
 import './directive'
 
-/* 引入组件 */
-import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css'
-Vue.use(Mint);
+/* 全局引入less */
+require('!style-loader!css-loader!less-loader!./styles/theme.less')
 
 Vue.config.productionTip = false
 

@@ -14,7 +14,8 @@
                     <time>{{articleInfo.time}}小时前</time>
                 </div>
             </div>
-            <div class="like-box" :class="articleInfo.attention?'like-n border-half':'like-y'" @click="articleInfo.attention = !articleInfo.attention">{{articleInfo.attention?'已关注':'关注'}}</div>
+            <div class="like-box" :class="articleInfo.attention?'like-n border-half':'like-y'" 
+            @click="articleInfo.attention = !articleInfo.attention">{{articleInfo.attention?'已关注':'关注'}}</div>
         </div>
         <p class="intro">{{articleInfo.intro}}</p>
         <div class="tags">
@@ -31,9 +32,9 @@
 <script>
     import { mapGetters } from 'vuex'
     export default {
-        async created () {
+        created () {
             this.$showLoading()
-            await this.$store.dispatch('getArticle', {id: this.$route.params.id})
+            this.$store.dispatch('getArticle', {id: this.$route.params.id})
             this.$hideLoading()
         },
         methods: {
@@ -47,9 +48,9 @@
             ])
         },
         watch: {
-            async $route () {
+            $route () {
                 this.$showLoading()
-                await this.$store.dispatch('getArticle', {id: this.$route.params.id})
+                this.$store.dispatch('getArticle', {id: this.$route.params.id})
                 this.$hideLoading()
             }
         }

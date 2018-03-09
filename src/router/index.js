@@ -55,7 +55,6 @@ export const router = new Router({
     { 
         path: '/search', 
         name: '搜索', 
-        meta: { slide: 1 },
         component: search
     },
     { 

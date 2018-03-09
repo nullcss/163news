@@ -24,7 +24,7 @@
         methods: {
             show (text) {
                 if (!this.$store.state.user.user.name) {
-                    this.$alert({content: '请先登录!'}).then ( () => {
+                    this.$alert("请先登录!").then ( () => {
                         this.$store.state.user.isLogin = true
                     })
                     return

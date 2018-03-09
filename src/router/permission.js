@@ -24,6 +24,7 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach((to, from) => {
     if (to.meta.page) store.state.app.pageLoading = false
+    console.log(to.name)
     document.title = to.name
 })
 

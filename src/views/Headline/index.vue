@@ -68,10 +68,9 @@
         
         methods: {
             loadingMore () {
-                return new Promise( async (resolve, reject) => {
+                return new Promise( (resolve, reject) => {
                     this.pageindex ++
-                    await this.$store.dispatch('getHeadlineList', { pageindex: this.pageindex })
-                    resolve()
+                    this.$store.dispatch('getHeadlineList', { pageindex: this.pageindex })
                 })
             },
             // 点赞
@@ -99,8 +98,6 @@
     }
 </script>
 <style lang="less" scoped>
-@import '../../styles/theme.less';
-
     .header-container {
         height: e("calc(100% - 0.4rem)");
         overflow-y: scroll;

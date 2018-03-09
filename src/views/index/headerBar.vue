@@ -18,6 +18,7 @@
         },
         methods: {
             skipSearch () {
+                this.$router.animate = 1
                 this.$router.push('/search')
             }
         }

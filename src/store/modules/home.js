@@ -54,7 +54,9 @@ const home = {
         },
         DELHOMETAG (state, news) {
             let index = state.newsList.findIndex( tag => tag.title === news.title)
-            state.newsList.splice(index, 1)
+            console.log(5555)
+            console.log(state.newsList)
+            state.newsList.splice(state.newsList[index], 1)
             Local.set('newList',  JSON.stringify(state.newsList))
         },
         GETHOMELIST (state, list) {

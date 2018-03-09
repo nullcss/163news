@@ -111,7 +111,6 @@
     }
 </script>
 <style lang="less" scoped>
-@import '../../styles/theme.less';
     .home-wrapper {
         overflow-y: scroll;
     }

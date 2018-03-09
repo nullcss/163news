@@ -71,6 +71,8 @@
                 item.playBol = true
                 this.$set(this.videoList, index, item)
                 this.dragVideo(index)
+                console.log(11111)
+                console.log(document.title)
             },
             // 暂停
             pause (index, item) {

@@ -24,7 +24,7 @@
             }
         },
         methods: {
-            async login () {
+            login () {
                 if (!this.username) {
                     this.username_msg = '请输入用户名'
                 }else{
@@ -42,14 +42,11 @@
                 if (this.password_msg) return
 
                 this.$showLoading()
-                try {
-                    await this.$store.dispatch('login', {
+                this.$store.dispatch('login', {
                         username: this.username,
                         password: this.password
                     })
-                }catch (e) {
 
-                }
                 this.$hideLoading()
                 this.$set(this.$store.state.user.footerBarList, 3, {title: '我的', icon: 'account1', path: '/account'})
                 this.$emit('close')

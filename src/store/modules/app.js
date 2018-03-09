@@ -12,6 +12,7 @@ const app = {
                     .then( res => {
                         console.log(res)
                         commit('GETARTICLE', res.data)
+                        console.log(res.data)
                         resolve(res.data)
                     }).catch( err => {
                         reject(err)

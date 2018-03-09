@@ -30,9 +30,9 @@
             }
         },
         methods: {
-            async active (index) {
+            active (index) {
                 this.$store.state.home.newsIndex = index
-                await this.$store.dispatch('getHomeList', this.newsList[this.homeNewsIndex])
+                this.$store.dispatch('getHomeList', this.newsList[this.homeNewsIndex])
             }
         },
         computed: {
