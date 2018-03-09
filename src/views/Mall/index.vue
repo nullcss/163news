@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="box border-half">
-			<h4>头条服务</h4>
+			<h4>服务</h4>
             <div class="li df-sb border-half-bottom" v-for="v in headList" @click="$alert(`暂未 “${v.title}” 模块`)">
                 <span>{{v.title}}</span>
                 <Icon name="arrow"></Icon>

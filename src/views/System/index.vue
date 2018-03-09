@@ -33,7 +33,7 @@
 
         <div class="box border-half">
             <div class="li df-sb border-half-bottom">
-                <span>头条封面</span>
+                <span>封面</span>
                 <Icon name="arrow"></Icon>
             </div>
             <div class="li df-sb border-half-bottom">

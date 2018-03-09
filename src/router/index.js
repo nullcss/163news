@@ -74,7 +74,7 @@ export const router = new Router({
     },
     { 
         path: '/mall', 
-        name: '头条商城', 
+        name: '商城', 
         meta: { 
             slide: 1 ,
             login: true

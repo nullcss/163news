@@ -11,7 +11,7 @@
         props: {
             title: {
                 type: String,
-                default: '今日头条'
+                default: '网易'
             }
         }
     }

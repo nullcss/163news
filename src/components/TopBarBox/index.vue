@@ -65,7 +65,7 @@
         text-align: left;
         border-top-right-radius: 0.1rem;
         border-top-left-radius: 0.1rem;
-        z-index: 99;
+        z-index: 9999;
         padding: 0.1rem;
         padding-top: 0.34rem;
         transition: top .2s ease-out;

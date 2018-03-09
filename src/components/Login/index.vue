@@ -10,7 +10,7 @@
             <input type="password" placeholder="密码: 123456" v-model="password">
             <span :class="{'animate': password_msg}">{{password_msg}}</span>
         </div>
-        <button class="login" @click="login">进入头条</button>
+        <button class="login" @click="login">进入163</button>
     </div>
 </template>
 <script>
