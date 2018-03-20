@@ -1,5 +1,7 @@
 # vue 仿网易163
 
+https://nullcss.github.io/vue-163/dist/index.html#/home
+
 ### npm install 安装依赖
 
 ### npm run dev 本地开发
